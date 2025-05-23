@@ -1,0 +1,34 @@
+[
+  {
+    "timestamp": "20250520_124633",
+    "body_part": "Pelvis",
+    "melanoma_likelihood": "<span style='font-size:18px;'><b>Melanoma likelihood:</b> <span style='color:#e34a6f'>9.7%</span><br><b>Non-melanoma likelihood:</b> <span style='color:#22b6b2'>90.3%</span></span><br><div style=\"color:#22b6b2;font-weight:bold;font-size:17px;\">Low risk. Continue to observe and protect your skin.</div>",
+    "image_path": "profile_scans/fc04580160824d53aecd1fd07a7477bf/scan_20250520_124633.jpg"
+  },
+  {
+    "timestamp": "20250520_124742",
+    "body_part": "Head (Back)",
+    "melanoma_likelihood": "<span style='font-size:18px;'><b>Melanoma likelihood:</b> <span style='color:#e34a6f'>31.1%</span><br><b>Non-melanoma likelihood:</b> <span style='color:#22b6b2'>68.9%</span></span><br><div style=\"color:#f08a24;font-weight:bold;font-size:17px;\">Moderate risk. Monitor closely and consult as needed.</div>",
+    "image_path": "profile_scans/fc04580160824d53aecd1fd07a7477bf/scan_20250520_124742.jpg"
+  },
+  {
+    "timestamp": "20250520_155626",
+    "body_part": "Right Upper Arm (Back)",
+    "melanoma_likelihood": "<span style='font-size:18px;'><b>Melanoma likelihood:</b> <span style='color:#e34a6f'>6.5%</span><br><b>Non-melanoma likelihood:</b> <span style='color:#22b6b2'>93.5%</span></span><br><div style=\"color:#22b6b2;font-weight:bold;font-size:17px;\">Low risk. Continue to observe and protect your skin.</div>",
+    "image_path": "profile_scans/fc04580160824d53aecd1fd07a7477bf/scan_20250520_155626.jpg"
+  },
+  {
+    "timestamp": "20250520_161316",
+    "body_part": "Chest",
+    "melanoma_likelihood": 54.196083545684814,
+    "non_melanoma_likelihood": 45.803916454315186,
+    "image_path": "profile_scans/fc04580160824d53aecd1fd07a7477bf/scan_20250520_161316.jpg"
+  },
+  {
+    "timestamp": "20250520_162630",
+    "body_part": "Chest",
+    "melanoma_likelihood": 35.15520691871643,
+    "non_melanoma_likelihood": 64.84479308128357,
+    "image_path": "profile_scans/fc04580160824d53aecd1fd07a7477bf/scan_20250520_162630.jpg"
+  }
+]
