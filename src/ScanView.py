@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import (
 )
 from PyQt5.QtGui import QPixmap, QPainter, QPen, QImage, QColor
 from PyQt5.QtCore import Qt, pyqtSignal
+from utils import resource_path # Added import
 import os
 import shutil
 from datetime import datetime
@@ -236,7 +237,7 @@ class ScanView(QWidget):
         central_row.addLayout(left_col, stretch=1)
 
         # Body map
-        self.body_map = BodyMap("Resources/icon_body.png")
+        self.body_map = BodyMap(resource_path("Resources/icon_body.png")) # Modified line
         self.body_map.setMinimumHeight(340)
         self.body_map.setMaximumWidth(360)
         self.body_map.setSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
