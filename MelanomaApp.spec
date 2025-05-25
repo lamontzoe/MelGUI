@@ -5,7 +5,7 @@ a = Analysis(
     ['src/main.py'],
     pathex=['src'],
     binaries=[],
-    datas=[('models/best.pt', 'models'), ('Resources', 'Resources')],
+    datas=[('models/best.pt', 'models'), (os.path.abspath('Resources'), 'Resources')],
     hiddenimports=['ultralytics', 'cv2', 'torch', 'PyQt5.sip', 'PyQt5.QtCore', 'PyQt5.QtGui', 'PyQt5.QtWidgets'],
     hookspath=[],
     hooksconfig={},

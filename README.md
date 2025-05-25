@@ -93,3 +93,9 @@ The repository includes a `MelanomaApp.spec` file which contains all the necessa
 **Running the Executable:**
 
 Once built, you can run the application by executing the main file within the `dist/MelanomaApp` directory.
+
+---
+**Debugging Resource Issues:**
+
+If you build the executable and find that resources like icons or models are not loading correctly, run the executable from a command terminal. The application now includes debugging print statements that will output information to the console regarding how it's trying to locate these resource files. This can help diagnose whether the files are not being included in the bundle correctly or if the paths are being resolved unexpectedly. Look for lines starting with "resource_path called with:", "Bundle Mode:", or "Dev Mode:".
+---
