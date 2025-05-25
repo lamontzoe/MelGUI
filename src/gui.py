@@ -9,7 +9,7 @@ from ProfileManager import ProfileManager
 from InfoView import InfoView
 from SettingsDialogue import SettingsDialogue
 import os
-from src.utils import resource_path
+from utils import resource_path
 
 ICON_HEALTH = resource_path(os.path.join("Resources", "icon_health.png"))  # add these icons in resources/
 ICON_PEOPLE = resource_path(os.path.join("Resources", "icon_people.png"))

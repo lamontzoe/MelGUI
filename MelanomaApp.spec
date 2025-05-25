@@ -1,9 +1,9 @@
 # -*- mode: python ; coding: utf-8 -*-
-
+import os
 
 a = Analysis(
     ['src/main.py'],
-    pathex=[],
+    pathex=['src'],
     binaries=[],
     datas=[('models/best.pt', 'models'), ('Resources', 'Resources')],
     hiddenimports=['ultralytics', 'cv2', 'torch', 'PyQt5.sip', 'PyQt5.QtCore', 'PyQt5.QtGui', 'PyQt5.QtWidgets'],
