@@ -65,3 +65,31 @@ Key directories in the project include:
 - `models/`: Stores the pre-trained machine learning model (`best.pt`) used for lesion analysis.
 - `profile_scans/`: This directory is created automatically and stores user-specific data, including uploaded scan images and their analysis results, organized by profile ID.
 - `Resources/`: Contains icon files and other static resources used by the GUI.
+
+## Building the Executable (Optional)
+
+This project is configured to be bundled into a standalone executable using PyInstaller. This allows you to run the application without needing a Python interpreter or installing dependencies manually on the target machine.
+
+**Prerequisites for Building:**
+
+1.  **Python Environment:** You'll need a Python environment (preferably the same version used for development, e.g., Python 3.9+) on the machine where you intend to build the executable.
+2.  **PyInstaller:** Install PyInstaller in your Python environment:
+    ```bash
+    pip install pyinstaller
+    ```
+3.  **Python Shared Library:** PyInstaller requires your Python installation to have been compiled with shared library support (e.g., `libpythonX.Y.so` on Linux, or the equivalent on other OSes). If you encounter `PythonLibraryNotFoundError`, you might need to reinstall/reconfigure Python with the `--enable-shared` flag or install a development version of Python (e.g., `sudo apt-get install python3-dev` on Debian/Ubuntu, though this was not sufficient in some limited environments).
+
+**Building with `MelanomaApp.spec`:**
+
+The repository includes a `MelanomaApp.spec` file which contains all the necessary configurations for PyInstaller.
+
+1.  Navigate to the root directory of this project in your terminal.
+2.  Run the following command:
+    ```bash
+    pyinstaller MelanomaApp.spec
+    ```
+3.  If the build is successful, you will find the bundled application in a directory named `dist/MelanomaApp` (or `dist/MelanomaApp.exe` on Windows, `dist/MelanomaApp.app` on macOS within a folder).
+
+**Running the Executable:**
+
+Once built, you can run the application by executing the main file within the `dist/MelanomaApp` directory.

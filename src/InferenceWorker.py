@@ -12,7 +12,13 @@ class InferenceWorker(QThread):
     def __init__(self, file_path, model_path='models/best.pt'):
         super().__init__()
         self.file_path = file_path
-        self.model_path = model_path
+        # self.model_path = model_path # Original
+        from src.utils import resource_path
+        if model_path == 'models/best.pt': # if it's the default sentinel value
+            self.model_path = resource_path(model_path)
+        else: # if a custom path was provided
+            self.model_path = model_path
+
 
     def run(self):
         try:
